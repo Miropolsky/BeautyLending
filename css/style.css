@@ -489,25 +489,93 @@ html, body {
   }
 }
 @media (max-width: 799px) {
+  .header .topLine {
+    column-gap: 15px;
+  }
+  .header .secondLine {
+    height: 100px;
+  }
+  .header .secondLine .information {
+    margin: 0 10%;
+  }
+  .header .secondLine .information .information_logo > img {
+    width: 100px;
+  }
+  .header .secondLine .information .information_contact {
+    column-gap: 10px;
+  }
+  .header .secondLine .information .information_contact .information_contact_tel {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .header .secondLine .information .information_contact .information_contact_btn {
+    width: 140px;
+    height: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .header .secondLine .information_menu {
+    column-gap: 10px;
+  }
+  .header .secondLine .information_menu .information_menu_item {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
   .main .sale {
-    height: 250px;
+    height: 120px;
     background: no-repeat top/100% url("/img/backgroundSale.png");
   }
   .main .sale .sale_block {
     margin-left: 5%;
+    height: 120px;
+    width: 200px;
+  }
+  .main .sale .sale_block .sale_block_title {
+    margin-top: 3%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
   }
   .main .sale .sale_block .sale_block_description {
-    margin-top: 10%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 2%;
   }
   .main .sale .sale_block .sale_block_btn {
-    margin-top: 10%;
+    margin-top: 5%;
+    width: 100px;
+    height: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
   }
   .main .models {
-    height: 750px;
+    height: 1090px;
+    padding-top: 30px;
+  }
+  .main .models .models_items {
+    flex-wrap: wrap;
+    gap: 30px;
   }
   .main .models .models_items .models_items_item {
-    width: 150px;
-    gap: 10px;
+    width: 190px;
+    gap: 5px;
   }
   .main .models .models_items .models_items_item img {
     margin-top: 5%;
@@ -522,15 +590,16 @@ html, body {
     margin-top: 5%;
   }
   .main .models .models_advertisement {
-    column-gap: 25px;
+    flex-wrap: wrap;
+    gap: 25px;
   }
   .main .models .models_advertisement .models_advertisement_block {
-    width: 330px;
+    width: 200px;
     height: 210px;
+    justify-content: center;
   }
   .main .models .models_advertisement .models_advertisement_block .inf_block {
-    margin-left: 5%;
-    width: 280px;
+    width: 210px;
   }
   .main .models .models_advertisement .models_advertisement_block .inf_block .title {
     font-family: "Roboto";
@@ -547,8 +616,8 @@ html, body {
     line-height: 19px;
   }
   .main .models .models_advertisement .models_advertisement_block .inf_block input {
-    width: 180px;
-    height: 30px;
+    width: 140px;
+    height: 28px;
   }
   .main .models .models_advertisement .models_advertisement_block .inf_block input ::placeholder {
     font-family: "Roboto";
@@ -558,11 +627,50 @@ html, body {
     line-height: 16px;
   }
   .main .models .models_advertisement .models_advertisement_block .inf_block .btn {
-    margin-top: 25px;
-    width: 180px;
-    height: 30px;
+    margin-top: 22%;
+    width: 140px;
+    height: 28px;
   }
   .main .models .models_advertisement img {
+    display: none;
+  }
+  .footer .line_1 {
+    height: 60px;
+  }
+  .footer .line_1 .footer__icons {
+    column-gap: 5px;
+  }
+  .footer .line_1 .footer__icons .footer__icons_item {
+    width: 25px;
+    height: 25px;
+  }
+  .footer .line_1 .footer__icons .footer__icons_item img {
+    width: 15px;
+    height: 15px;
+  }
+  .footer .line_1 .footer_adres {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .footer .line_1 .footer__tel {
+    display: none;
+  }
+  .footer .line_1 .footer_btn {
+    width: 100px;
+    height: 28px;
+    border: 2px solid #66C05D;
+    border-radius: 40px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: black;
+  }
+  .footer .line_2 {
     display: none;
   }
 }

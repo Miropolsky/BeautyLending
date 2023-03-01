@@ -437,26 +437,72 @@ html,body{
 }
 
 @media (max-width: 799px) {
+    .header{
+        .topLine{
+            column-gap: 15px;
+        }
+        .secondLine{
+            height: 100px;
+            .information{
+                margin: 0 10%;
+                .information_logo{
+                    >img{
+                        width: 100px;
+                    }
+                }
+                .information_contact{
+                    column-gap: 10px;
+                    .information_contact_tel{
+                        @include fontRoboto(400, 12px, 16px);
+                    }
+                    .information_contact_btn{
+                        width: 140px;
+                        height: 30px;
+                        @include fontRoboto(400, 12px, 12px)
+                    }
+                }
+            }
+            .information_menu{
+                column-gap: 10px;
+                .information_menu_item{
+                    @include fontRoboto(400, 12px, 14px)
+                }
+            }
+        }
+    }
     .main{
         .sale{
-            height: 250px;
+            height: 120px;
             background: no-repeat top/100% url('/img/backgroundSale.png');
             .sale_block{
                 margin-left: 5%;
+                height: 120px;
+                width: 200px;
+                .sale_block_title{
+                    margin-top: 3%;
+                    @include fontRoboto(700, 18px, 20px);
+                }
                 .sale_block_description{
-                    margin-top: 10%;
+                    @include fontRoboto(400, 12px, 14px);
+                    margin-top: 2%;
                 }
                 .sale_block_btn{
-                    margin-top: 10%;
+                    margin-top: 5%;
+                    width: 100px;
+                    height: 30px;
+                    @include fontRoboto(400, 12px, 14px);
                 }
             }
         }
         .models{
-            height: 750px;
+            height: 1090px;
+            padding-top: 30px;
             .models_items{
+                flex-wrap: wrap;
+                gap: 30px;
                 .models_items_item{
-                    width: 150px;
-                    gap: 10px;
+                    width: 190px;
+                    gap: 5px;
                     img{
                         margin-top: 5%;
                     }
@@ -472,13 +518,15 @@ html,body{
                 }
             }
             .models_advertisement{
-                column-gap: 25px;
+                flex-wrap: wrap;
+                gap: 25px;
                 .models_advertisement_block{
-                    width: 330px;
+                    width: 200px;
                     height: 210px;
+                    justify-content: center;
                     .inf_block{
-                        margin-left: 5%;                     
-                        width: 280px;
+                                            
+                        width: 210px;
                         .title{
                             @include fontRoboto(700, 16px, 19px);
                         }
@@ -486,17 +534,17 @@ html,body{
                             @include fontRoboto(400, 12px, 19px);
                         }
                         input{
-                            width: 180px;
-                            height: 30px;
+                            width: 140px;
+                            height: 28px;
                             ::placeholder {
                                 @include fontRoboto(400, 14px, 16px);
                             }
                         }
     
                         .btn{
-                            margin-top: 25px;
-                            width: 180px;
-                            height: 30px;
+                            margin-top: 22%;
+                            width: 140px;
+                            height: 28px;
                         }
                     }
                 }
@@ -505,5 +553,39 @@ html,body{
                 }
             }
         }
+    }
+    .footer{
+        .line_1{
+            height: 60px;
+            .footer__icons{
+                column-gap: 5px;
+                .footer__icons_item{
+                    width: 25px;
+                    height: 25px;
+                    img{
+                        width: 15px;
+                        height: 15px; 
+                    }
+                }
+            }
+            .footer_adres{
+                @include fontRoboto(400, 10px, 14px);
+            }
+            .footer__tel{
+                display: none;
+            }
+            .footer_btn{
+                width: 100px;
+                height: 28px;
+                border: 2px solid #66C05D;
+                border-radius: 40px;
+                @include fontRoboto(400, 10px, 12px);
+                color: black;
+            }
+        }
+        .line_2{
+            display: none;
+        }
+       
     }
 }
