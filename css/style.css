@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Prata&family=Roboto:wght@300;400;500&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.header .topLine {
+  height: 50px;
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+.header .topLine .topLine__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+}
+.header .secondLine {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.header .secondLine .information {
+  margin: 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .secondLine .information .information_logo {
+  display: flex;
+  align-items: center;
+}
+.header .secondLine .information .information_contact {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.header .secondLine .information .information_contact .information_contact_tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.header .secondLine .information .information_contact .information_contact_btn {
+  background: #FFFFFF;
+  border: 2px solid #66C05D;
+  border-radius: 40px;
+  width: 170px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.header .secondLine .line {
+  border-top: 1px solid #EFEFEF;
+  width: 100%;
+}
+.header .secondLine .information_menu {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  justify-content: center;
+}
+.header .secondLine .information_menu .information_menu_item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.main .sale {
+  height: 454px;
+  width: 100%;
+  background: no-repeat top/100% url("/img/backgroundSale.png");
+  background-color: #66C05D;
+  display: flex;
+  align-items: center;
+}
+.main .sale .sale_block {
+  width: 308px;
+  height: 219px;
+  margin-left: 15%;
+}
+.main .sale .sale_block .sale_block_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+.main .sale .sale_block .sale_block_description {
+  margin-top: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.main .sale .sale_block .sale_block_btn {
+  margin-top: 50px;
+  width: 170px;
+  height: 40px;
+  background: #66C05D;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.main .models {
+  height: 954px;
+  background-color: #EFEFEF;
+  padding-top: 80px;
+}
+.main .models .models_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.13px;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.main .models .models_items {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+.main .models .models_items .models_items_item {
+  width: 255px;
+  height: 363px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .models .models_items .models_items_item img {
+  margin-top: 5%;
+}
+.main .models .models_items .models_items_item .description {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 8%;
+  color: #333333;
+}
+.main .models .models_items .models_items_item .price {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  margin-top: 9%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.main .models .models_items .models_items_item .btn {
+  margin-top: 9%;
+  width: 130px;
+  height: 35px;
+  background: #66C05D;
+  border: #66C05D;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+.main .models .models_advertisement {
+  display: flex;
+  justify-content: center;
+  margin-top: 7%;
+  column-gap: 30px;
+}
+.main .models .models_advertisement .models_advertisement_block {
+  width: 540px;
+  height: 212px;
+  background: #66C05D;
+  display: flex;
+  align-items: center;
+}
+.main .models .models_advertisement .models_advertisement_block .inf_block {
+  margin-left: 8%;
+  display: flex;
+  width: 280px;
+  flex-direction: column;
+}
+.main .models .models_advertisement .models_advertisement_block .inf_block .title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.main .models .models_advertisement .models_advertisement_block .inf_block .description {
+  margin-top: 6%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.main .models .models_advertisement .models_advertisement_block .inf_block input {
+  margin-top: 6%;
+  width: 225px;
+  height: 35px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+}
+.main .models .models_advertisement .models_advertisement_block .inf_block input ::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+}
+.main .models .models_advertisement .models_advertisement_block .inf_block .btn {
+  margin-top: 6%;
+  width: 170px;
+  height: 35px;
+  box-sizing: border-box;
+  background: #66C05D;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.main .models .models_advertisement .models_advertisement_block > img {
+  margin-left: 0%;
+  width: 140px;
+  height: 106px;
+}
+
+.footer .line_1 {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .line_1 .footer__icons {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.footer .line_1 .footer__icons .footer__icons_item {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #66C05D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .line_1 .footer__icons .footer__icons_item img {
+  width: 30px;
+  height: 30px;
+}
+.footer .line_1 .footer_adres {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+}
+.footer .line_1 .footer__tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+.footer .line_1 .footer_btn {
+  box-sizing: border-box;
+  width: 170px;
+  height: 40px;
+  border: 2px solid #66C05D;
+  border-radius: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+}
+.footer .line_2 {
+  background: #EFEFEF;
+  height: 64px;
+  display: flex;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 1140px) and (max-width: 1440px) {
+  .main .sale {
+    height: 350px;
+    width: 100%;
+    background: no-repeat top/100% url("/img/backgroundSale.png");
+  }
+  .main .models {
+    height: 820px;
+  }
+  .main .models .models_items .models_items_item {
+    width: 180px;
+    gap: 15px;
+  }
+  .main .models .models_items .models_items_item img {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .description {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .price {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .btn {
+    margin-top: 5%;
+  }
+  .main .models .models_advertisement {
+    column-gap: 30px;
+  }
+  .main .models .models_advertisement .models_advertisement_block {
+    width: 390px;
+    height: 210px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block {
+    margin-left: 5%;
+    width: 220px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block input {
+    width: 200px;
+    height: 30px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block input ::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .btn {
+    width: 170px;
+    height: 30px;
+  }
+  .main .models .models_advertisement > img {
+    margin-left: 0;
+  }
+}
+@media (min-width: 800px) and (max-width: 1139px) {
+  .main .sale {
+    height: 250px;
+    background: no-repeat top/100% url("/img/backgroundSale.png");
+  }
+  .main .sale .sale_block {
+    margin-left: 5%;
+  }
+  .main .sale .sale_block .sale_block_description {
+    margin-top: 10%;
+  }
+  .main .sale .sale_block .sale_block_btn {
+    margin-top: 10%;
+  }
+  .main .models {
+    height: 750px;
+  }
+  .main .models .models_items .models_items_item {
+    width: 150px;
+    gap: 10px;
+  }
+  .main .models .models_items .models_items_item img {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .description {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .price {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .btn {
+    margin-top: 5%;
+  }
+  .main .models .models_advertisement {
+    column-gap: 25px;
+  }
+  .main .models .models_advertisement .models_advertisement_block {
+    width: 330px;
+    height: 210px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block {
+    margin-left: 5%;
+    width: 280px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block input {
+    width: 180px;
+    height: 30px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block input ::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .btn {
+    margin-top: 25px;
+    width: 180px;
+    height: 30px;
+  }
+  .main .models .models_advertisement img {
+    display: none;
+  }
+}
+@media (max-width: 799px) {
+  .main .sale {
+    height: 250px;
+    background: no-repeat top/100% url("/img/backgroundSale.png");
+  }
+  .main .sale .sale_block {
+    margin-left: 5%;
+  }
+  .main .sale .sale_block .sale_block_description {
+    margin-top: 10%;
+  }
+  .main .sale .sale_block .sale_block_btn {
+    margin-top: 10%;
+  }
+  .main .models {
+    height: 750px;
+  }
+  .main .models .models_items .models_items_item {
+    width: 150px;
+    gap: 10px;
+  }
+  .main .models .models_items .models_items_item img {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .description {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .price {
+    margin-top: 5%;
+  }
+  .main .models .models_items .models_items_item .btn {
+    margin-top: 5%;
+  }
+  .main .models .models_advertisement {
+    column-gap: 25px;
+  }
+  .main .models .models_advertisement .models_advertisement_block {
+    width: 330px;
+    height: 210px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block {
+    margin-left: 5%;
+    width: 280px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .description {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block input {
+    width: 180px;
+    height: 30px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block input ::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .main .models .models_advertisement .models_advertisement_block .inf_block .btn {
+    margin-top: 25px;
+    width: 180px;
+    height: 30px;
+  }
+  .main .models .models_advertisement img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
